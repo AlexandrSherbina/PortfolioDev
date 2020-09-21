@@ -1,0 +1,17 @@
+.descr {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    &_fz14 {
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    &_about {
+        margin-top: 6px;
+    }
+}

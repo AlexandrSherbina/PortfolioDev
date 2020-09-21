@@ -1,0 +1,91 @@
+.skills {
+    padding-top: 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        margin: 60px 10px 0 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: 270px;
+        grid-auto-rows: 270px 270px;
+        column-gap: 13px;
+        row-gap: 13px;       
+    }
+    &__item {
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        padding: 30px 30px 25px 30px;
+        &-title {
+           padding-top: 30px;
+           margin-bottom: 15px;
+        }        
+        &-description {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;           
+        }
+    }
+
+    &__percents {
+        margin-top: 124px;  
+        &-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 350px);
+            grid-template-rows: repeat(2, 70px);
+            grid-auto-flow: 350px;
+            column-gap: 45px;
+            row-gap: 30px;
+        }
+        &-item {
+            width: 350px;
+            height: 70px;
+        }
+        &-row {          
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            h4 {
+                padding-left: 14px;
+                // line-height: 24px;  
+                margin-bottom: 20px;                           
+            }
+            
+        }     
+        &-title {
+            position: relative;   
+            @include before_circle; 
+            &:before {
+                top: -7px;
+                left: 0;                
+            }          
+            }
+        &-linetop {                     
+            height: 14px;
+            background: #E8E4DE;
+            border-radius: 4px;
+            z-index: 1;
+            }
+        &-linebottom {            
+            height: 14px;
+            background: $main-color;
+            border-radius: 4px;
+            z-index: 2;
+        }
+
+        }
+      
+    
+        
+}
+
