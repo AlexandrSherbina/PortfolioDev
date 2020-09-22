@@ -14,6 +14,7 @@ const counters = document.querySelectorAll('.skills__percents-width'),
 
     counters.forEach((item, i) => {
         lines[i].style.width = item.innerHTML;
+        console.log(counters);
     });
 
 
