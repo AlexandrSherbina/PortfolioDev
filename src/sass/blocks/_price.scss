@@ -31,7 +31,7 @@
                 }
         }
         &-cost {
-        text-align: end;          
+            justify-self: end; 
         }
         &-subtitle {
             grid-column: 1 / 3;
